@@ -63,8 +63,15 @@ namespace Salaries
             errorsetting = new XDocument(new XElement("Propites"));
             errorsetting.Save(filePropites());
             MessageInfo("Файл с настройками создан");
+            FirstStartPropites();
         }
-        
+        private void FirstStartPropites()
+        {
+            XDocument Startpropites = XDocument.Load(filePropites());
+            XElement UniqueID = new XElement("UniqueID", 1);
+            Startpropites.Add(UniqueID);
+            Startpropites.Save(filePropites());
+        }
 
 
 
