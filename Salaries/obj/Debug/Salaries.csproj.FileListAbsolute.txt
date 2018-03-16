@@ -1,0 +1,10 @@
+F:\work\CalcSalaries\Salaries\bin\Debug\Salaries.exe.config
+F:\work\CalcSalaries\Salaries\bin\Debug\Salaries.exe
+F:\work\CalcSalaries\Salaries\bin\Debug\Salaries.pdb
+F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.csprojResolveAssemblyReference.cache
+F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.Main.resources
+F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.Properties.Resources.resources
+F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.csproj.GenerateResource.Cache
+F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.csproj.CoreCompileInputs.cache
+F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.exe
+F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.pdb
