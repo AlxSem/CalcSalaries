@@ -88,6 +88,22 @@ namespace Salaries
                     Core.ReportsFunc();
                 }
             }
+
+            if (Directory.Exists("Propites"))
+            {
+                if (!(File.Exists(Core.fileReport())))//Если файл не существует создать его
+                {
+                    Core.SettingFunc();
+                }
+            }
+            else
+            {
+                Directory.CreateDirectory("Propites");
+                if (!(File.Exists(Core.fileReport())))//Если файл не существует создать его
+                {
+                    Core.SettingFunc();
+                }
+            }
         }
 
         

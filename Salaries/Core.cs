@@ -32,6 +32,10 @@ namespace Salaries
         {
             return Environment.CurrentDirectory + "\\Reports\\" + DateTime.Now.ToShortDateString() + ".xml";
         }
+        public string filePropites() //путь
+        {
+            return Environment.CurrentDirectory + "\\Propites\\Settings.xml";
+        }
         public void WorkmensFunc()
         {
             XDocument errorworkman;
@@ -53,7 +57,13 @@ namespace Salaries
             errortables.Save(fileReport());
             MessageInfo("Зафиксированно начало нового дня!");
         }
-
+        public void SettingFunc()
+        {
+            XDocument errorsetting;
+            errorsetting = new XDocument(new XElement("Propites"));
+            errorsetting.Save(filePropites());
+            MessageInfo("Файл с настройками создан");
+        }
         
 
 
