@@ -48,7 +48,10 @@ namespace Salaries
         }
         public void ReportsFunc()
         {
-
+            XDocument errortables;
+            errortables = new XDocument(new XElement("Reports"));
+            errortables.Save(fileReport());
+            MessageInfo("Зафиксированно начало нового дня!");
         }
 
         
