@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.WorkersTabl = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.NemeTextBox = new System.Windows.Forms.TextBox();
+            this.PostTextBox = new System.Windows.Forms.TextBox();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.WorkersTabl)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // WorkersTabl
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.WorkersTabl.AllowUserToAddRows = false;
+            this.WorkersTabl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.WorkersTabl.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.WorkersTabl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.WorkersTabl.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(-3, 89);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(560, 415);
-            this.dataGridView1.TabIndex = 17;
+            this.WorkersTabl.Location = new System.Drawing.Point(-3, 89);
+            this.WorkersTabl.MultiSelect = false;
+            this.WorkersTabl.Name = "WorkersTabl";
+            this.WorkersTabl.ReadOnly = true;
+            this.WorkersTabl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.WorkersTabl.Size = new System.Drawing.Size(560, 415);
+            this.WorkersTabl.TabIndex = 17;
             // 
             // Column1
             // 
@@ -90,74 +90,77 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Имя Фамилия";
             // 
-            // textBox1
+            // NemeTextBox
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Location = new System.Drawing.Point(11, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 20);
-            this.textBox1.TabIndex = 14;
+            this.NemeTextBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.NemeTextBox.Location = new System.Drawing.Point(11, 18);
+            this.NemeTextBox.Name = "NemeTextBox";
+            this.NemeTextBox.Size = new System.Drawing.Size(239, 20);
+            this.NemeTextBox.TabIndex = 14;
             // 
-            // textBox2
+            // PostTextBox
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox2.Location = new System.Drawing.Point(302, 18);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(239, 20);
-            this.textBox2.TabIndex = 21;
+            this.PostTextBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.PostTextBox.Location = new System.Drawing.Point(302, 18);
+            this.PostTextBox.Name = "PostTextBox";
+            this.PostTextBox.Size = new System.Drawing.Size(239, 20);
+            this.PostTextBox.TabIndex = 21;
             // 
-            // button4
+            // SaveButton
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(185, 44);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(175, 43);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Сохранить";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
+            this.SaveButton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.SaveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SaveButton.Location = new System.Drawing.Point(185, 44);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(175, 43);
+            this.SaveButton.TabIndex = 20;
+            this.SaveButton.Text = "Сохранить";
+            this.SaveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // button3
+            // DeleteButton
             // 
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(366, 44);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 43);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Удалить";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeleteButton.Location = new System.Drawing.Point(366, 44);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(175, 43);
+            this.DeleteButton.TabIndex = 19;
+            this.DeleteButton.Text = "Удалить";
+            this.DeleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // button1
+            // AddButton
             // 
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(11, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 43);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Добавить";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AddButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddButton.Location = new System.Drawing.Point(11, 44);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(168, 43);
+            this.AddButton.TabIndex = 18;
+            this.AddButton.Text = "Добавить";
+            this.AddButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // WMControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 507);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.WorkersTabl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.NemeTextBox);
+            this.Controls.Add(this.PostTextBox);
+            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.AddButton);
             this.MinimumSize = new System.Drawing.Size(570, 546);
             this.Name = "WMControl";
             this.Text = "WMControl";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.WMControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.WorkersTabl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,15 +168,15 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView WorkersTabl;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox NemeTextBox;
+        private System.Windows.Forms.TextBox PostTextBox;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button AddButton;
     }
 }
