@@ -16,5 +16,19 @@ namespace Salaries
         {
             InitializeComponent();
         }
+
+        private void WMControlButton_Click(object sender, EventArgs e) //Открытие окна Управление рабочими
+        {
+            WMControl f = new WMControl();
+            f.SetDesktopLocation(Cursor.Position.X, Cursor.Position.Y);
+            f.Show();
+        }
+
+        private void WControlButton_Click(object sender, EventArgs e)
+        {
+            WMControl f = new WMControl();
+            f.SetDesktopLocation(Cursor.Position.X, Cursor.Position.Y);
+            f.Show();
+        }
     }
 }
