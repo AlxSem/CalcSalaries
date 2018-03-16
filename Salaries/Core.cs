@@ -22,11 +22,11 @@ namespace Salaries
         }
         public string fileWorkmans() //путь
         {
-            return Environment.CurrentDirectory + "\\Workmans\\workmans.xml"; ;
+            return Environment.CurrentDirectory + "\\Workmans\\Workmans.xml"; ;
         }
         public string fileTasks() //путь
         {
-            return Environment.CurrentDirectory + "\\Tasks\\tasks.xml";
+            return Environment.CurrentDirectory + "\\Tasks\\Tasks.xml";
         }
         public string fileReport()
         {
@@ -69,7 +69,7 @@ namespace Salaries
         {
             XDocument Startpropites = XDocument.Load(filePropites());
             XElement UniqueID = new XElement("UniqueID", 1);
-            Startpropites.Add(UniqueID);
+            Startpropites.Root.Add(UniqueID);
             Startpropites.Save(filePropites());
         }
 

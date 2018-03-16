@@ -91,7 +91,7 @@ namespace Salaries
 
             if (Directory.Exists("Propites"))
             {
-                if (!(File.Exists(Core.fileReport())))//Если файл не существует создать его
+                if (!(File.Exists(Core.filePropites())))//Если файл не существует создать его
                 {
                     Core.SettingFunc();
                 }
@@ -99,7 +99,7 @@ namespace Salaries
             else
             {
                 Directory.CreateDirectory("Propites");
-                if (!(File.Exists(Core.fileReport())))//Если файл не существует создать его
+                if (!(File.Exists(Core.filePropites())))//Если файл не существует создать его
                 {
                     Core.SettingFunc();
                 }

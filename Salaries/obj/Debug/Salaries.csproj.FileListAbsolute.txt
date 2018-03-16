@@ -8,3 +8,4 @@ F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.csproj.GenerateResource.Cache
 F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.csproj.CoreCompileInputs.cache
 F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.exe
 F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.pdb
+F:\work\CalcSalaries\Salaries\obj\Debug\Salaries.WMControl.resources
