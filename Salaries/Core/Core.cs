@@ -86,7 +86,7 @@ namespace Salaries
             ++UniqueID;
             XDocument ID = XDocument.Load(filePropites());
             ID.Element("Propites").Element("UniqueID").Value = UniqueID.ToString();
-            ID.Save(filePropites());
+            ID.Save(filePropites()); 
         }
 
 
