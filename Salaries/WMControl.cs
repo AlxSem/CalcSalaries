@@ -36,7 +36,7 @@ namespace Salaries
             {
                 return;
             }
-            Core.WorkmensFunc();
+            
         }
 
         private void AddButton_Click(object sender, EventArgs e)
@@ -49,6 +49,7 @@ namespace Salaries
             string Name = NemeTextBox.Text;
             string Post = PostTextBox.Text;
             int UniqueID = Core.GetUniqueID();
+            Core.SetUniqueID(UniqueID);
             MessageBox.Show(Convert.ToString(UniqueID));
         }
 

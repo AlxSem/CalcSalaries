@@ -79,9 +79,15 @@ namespace Salaries
         public int GetUniqueID()
         {
             XDocument ID = XDocument.Load(filePropites());
-            return Convert.ToInt32(ID.Element("UniqueID").Value);
+            return Convert.ToInt32(ID.Element("Propites").Element("UniqueID").Value);
         }
-
+        public void SetUniqueID(int UniqueID)
+        {
+            ++UniqueID;
+            XDocument ID = XDocument.Load(filePropites());
+            ID.Element("Propites").Element("UniqueID").Value = UniqueID.ToString();
+            ID.Save(filePropites());
+        }
 
 
 
