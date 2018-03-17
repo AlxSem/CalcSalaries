@@ -20,6 +20,10 @@ namespace Salaries
         {
             MessageBox.Show(message, "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        public void MessageError(string message)
+        {
+            MessageBox.Show(message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
         public string fileWorkmans() //путь
         {
             return Environment.CurrentDirectory + "\\Workmans\\Workmans.xml"; ;
@@ -72,7 +76,11 @@ namespace Salaries
             Startpropites.Root.Add(UniqueID);
             Startpropites.Save(filePropites());
         }
-
+        public int GetUniqueID()
+        {
+            XDocument ID = XDocument.Load(filePropites());
+            return Convert.ToInt32(ID.Element("UniqueID").Value);
+        }
 
 
 

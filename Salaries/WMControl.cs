@@ -41,7 +41,15 @@ namespace Salaries
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            
+            if(NemeTextBox.Text == "")
+            {
+                Core.MessageError("Поле имени пустое");
+                return;
+            }
+            string Name = NemeTextBox.Text;
+            string Post = PostTextBox.Text;
+            int UniqueID = Core.GetUniqueID();
+            MessageBox.Show(Convert.ToString(UniqueID));
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
